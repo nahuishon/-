@@ -4,9 +4,9 @@
 
 
 html {
-    font-size: 0.8rem;
+    font-size: 0.4rem;
     font-family: 'Lora', serif;
-    background-color: #000000;
+    background-color: #0c0b0b;
   }
   
   
@@ -18,16 +18,16 @@ html {
   
   a {
     text-decoration:none;
-    color: #2b1f0f;
+    color: #e2d3c0;
   }
   
   a:hover {
     text-decoration: none;
-    color: #422e11;
+    color: #eee0cc;
   }
   
       main {
-          max-width:100em;
+          max-width:400em;
           margin:10 auto;
       }
   
