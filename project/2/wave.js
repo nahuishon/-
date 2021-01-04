@@ -33,4 +33,4 @@ export class Wave {
         ctx.arc(this.point.x, this.point.y, 30, 0, 2 * Mate.PI);
         ctx.fill();
     }
-
+}
