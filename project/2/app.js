@@ -1,54 +1,42 @@
-import {Visual} from 'visual.js'
+import {
+    Wave
+} from './wave.js';
+import { Wave } from './wave.js';
 
 class App{
-    constructor(){
-     this.canvas= document.createElement('canvas');
-     document.body.appendChild(this.canvas);
-     this.ctx = this.canvas.getContext('2d');
+    constructor() {
+        this.canvas = document.createElement('canvas');
+        this.ctx = this.canvas.getContext('2d');
+        document.body.appendChild(this.canvas);
 
-     this.pixelRatio = window.devicePixelRatio > 1 ? 2 : 1;
+        this.wave = new Wave();
 
+        window.addEventListener('resize', this.resize.bind(this), false);
+        this.resize();
 
-        WebFont.load({
-            google: {
-                families: ['Hind:700']
-            },
-            fontactive: ()=> {
-                this.Visual = new Visual();
-
-             window.addEventListener('resize', this.resize.bind(this), false)
-             this.resize();
-
-             requestAnimationFrame(this.animate.bind(this));
-             
-            }
-        });
-    }
-
-    resize() {
-        this.stageWidth = document.body.clientWidth;
-        this.stageHeigt = document.body.clientHeight;
-
-        this.canvas.width = this.stageWidth * this.pixelRatio;
-        this.canvas.width = this.stageWidth * this.pixelRatio;
-        this.canvas.style.idth = this.stageWidth + 'px';
-        this.canvas.style.height = this.stageWidth + 'px';
-        this.ctx.scale(this.pixelRatio, this.pixelRatio);
-        this.ctx.lineCap = 'round';
-        this.ctx.lineWidth = 4;
-
-        this.Visual.show(this.stageWidth, this.stageHeigt);
-
-    }
-
-    animate() {
-    requestAnimationFrame(this.animate.bine(this));
+        requestAnimationFrame(this.animate.bind(this));
+     }
+     
+     resize() {
+         this.stageWidth = document.body.clientWidth;
+         this.stageHeigt = document.body.clientHeight;
     
-    this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeigt);
+         this.canvas.Width = this.stageWidth * 2;
+         this.canvas.Height = this.stageHeigt * 2;
+         this.ctx.scale(2, 2);
 
-    this.Visual.animate(this.ctx);
-    }
-}
+         this.wave.resize(this.stageWidth, this.stageHeigt);
+      }
+
+     animate(t) {
+        this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeigt);
+
+        let.wave.draw(this.ctx);
+        
+        requestAnimationFrame(this.animate.bind(this));
+        }
+      }
+  
 window.onload= () =>{
     new App();
 };

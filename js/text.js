@@ -1,12 +1,12 @@
-import { pointCircle } from "utils.js";
+import { pointCircle } from "./utils.js";
 
 export class Text{
     constructor(){
         this.canvas=document.createElement('canvas');
-        this.canas.style.position='absolute';
-        this.canas.style.left='0px';
-        this.canas.style.top='0px';
-        document.body.appendChild(this.canvas);
+        //this.canas.style.position='absolute';
+        //this.canas.style.left='0px';
+        //this.canas.style.top='0px';
+        //document.body.appendChild(this.canvas);
     
         this.ctx=this.canvas.getContext('2d');
     }
@@ -46,21 +46,20 @@ export class Text{
             let i =0;
             let width=0;
             let pixel;
-
             for (let height=0; height <stageHeight; height += density){ ++i;
-            const slide= (i % 2)==0;
+            const slide= ((i % 2) == 0);
             width = 0;
             if (slide == 1) {
                 width += 6;
             }
           
             for(width; width < stageWidth; width += density) {
-                pixel = imageDeta [((width + (height * stageWidth)) *4) -1];
+                pixel = imageDeta [((width + (height * stageWidth)) * 4) -1];
                 if (pixel != 0 &&
                     width > 0 &&
                     width < stageWidth &&
                     height > 0 &&
-                    height < stageHeight) {
+                    height < stageHeight){
                         particles.push({
                             x: width,
                             y: height,
@@ -80,7 +79,7 @@ export class Text{
             for (let i = 1; i < particles, length; i++) {
                 const item = particles[i];
                  minX = Mate.min(minX, item.x);
-                 minX = Mate.max(maxX, item.x);
+                 maxX = Mate.max(maxX, item.x);
                  minY = Mate.min(minY, item.y);
                  maxY = Mate.max(maxY, item.y);
             }
@@ -97,6 +96,11 @@ export class Text{
             for (let i = 0; i < xTotal; i++) {
                 const tx = i * gap + minX;
                 xArray[i] = [];
+
+
+             for (let j = 0; j < yTotal; j++) {
+                  const tx = i * gap + minX;
+                  xArray[i] = [];
 
                 for (let k = 0; k < particles.length; k++) {
                     const item = particles[k];
@@ -148,6 +152,7 @@ export class Text{
                      }
                    }
                 }
+                }
              
                 return{
                   particles,
@@ -157,6 +162,5 @@ export class Text{
                   maxY,
                   outline,
              }
-            }
+          }
         }
-    
