@@ -34,8 +34,8 @@ class App{
         let.wave.draw(this.ctx);
         
         requestAnimationFrame(this.animate.bind(this));
-       }
-  }
+        }
+      }
   
 window.onload= () =>{
     new App();
