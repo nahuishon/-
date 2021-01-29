@@ -16,12 +16,13 @@ body,html{
 
 
  h1{
-   font-size:50px;
+   font-size:40px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
    text-transform: uppercase;
    margin:0;
  }
    
-  .banner-img{
+.banner-img{
       background-image: url(bal.jpg);
       -webkit-background-size:cover;
       background-size: cover;
@@ -29,41 +30,44 @@ body,html{
       background-position: center center;
       margin-top: 0px;
       height: 100%;
-      filter:blur(3px)
+      filter:blur(px)
   }
-  .banner-text{
+.banner-text{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    margin-top: 10px;
     z-index: 5;
     width: 45%;
-    padding: 40px;
+    padding: 45px;
     text-align: center;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius:30%;
-    background-color: rgba(169, 170, 190, 0.3);
-    color:rgb(253, 238, 238);
+    border-top-left-radius: 0%;
+    border-bottom-right-radius:0%;
+    background-color: rgb(238, 104, 80);
+    color:rgb(255, 255, 255);
     font-weight: bold;
-    border:10px inset rgb(255, 251, 251);
+    border:3px inset rgb(255, 247, 247);
   }
 .banner-text p{
-    padding: 0 8%;
-    font-family: merienda;
+    padding: 0.8%;
+    font-family: sans-serif;
+    margin-top: 10px;
 }
 p1{
     display:inline-block;
     padding: 10px 50px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(24, 23, 23);
     font-size: 12px;
     text-decoration: none;
-    color:rgb(219, 219, 219);
-    margin-top:15px;
+    color:rgb(3, 3, 3);
+    font-family: sans-serif;
+    margin-top: 25px;
 }
 p2{
-    display:inline-block;
+    display:none;
     padding: 10px 50px;
-    border: 2px solid rgb(236, 213, 213);
+    border: 2px solid rgb(240, 240, 240);
     font-size: 18px;
     text-decoration: none;
     color:rgb(255, 236, 236);
@@ -72,13 +76,13 @@ p2{
 a{
     display:inline-block;
     padding: 10px 50px;
-    border: 0px solid rgb(240, 239, 239);
+    border: 0px solid rgb(240, 240, 240);
     font-size: 28px;
     text-decoration: none;
-    color:rgb(240, 229, 229);
-    margin-top:15px;
+    color:rgb(255, 255, 255);
+    margin-top:45px;
   }
-  .cursor{
+.cursor{
     position: fixed;
     width: 50px;
     height: 50px;
@@ -91,7 +95,7 @@ a{
     transition: .1s;
   }
   
-  .cursor2{
+.cursor2{
     position: fixed;
     width: 8px;
     height: 8px;
@@ -104,7 +108,8 @@ a{
     transition: .15s;
   }
   
-  .content:hover ~ .cursor{
+.content:hover ~ 
+.cursor{
     transform: translate(-50%, -50%) scale(1.5);
     background-color: #8b8989;
     opacity: .5;
