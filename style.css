@@ -1,125 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gayathri:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
-*
-
-body,html{
-  height: 100%;
-  margin: 0;
-  padding:0;
-  font-family: 'B612', sans-serif;
-   min-height: 100vh;
-   cursor: pointer;
-  }
-
-
- h1{
-   font-size:80px;
-   font-family:'B612', sans-serif;
-   text-transform: uppercase;
-   margin:0;
-   color: #1b1a1a
- }
-   
-.banner-img{
-      background-image: url(3.png);
-      -webkit-background-size:cover;
-      background-size: cover;
-      background-repeat: repeat;
-      background-position: center center;
-      margin-top: 0px;
-      height: 100%;
-      filter:blur(4px)
-  }
-.banner-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    margin-top: 30px;
-    z-index: 5;
-    width: 50%;
-    padding: 45px;
-    text-align: center;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius:10%;
-    color:rgb(255, 254, 254);
-    font-weight: bold;
-    border:5px inset rgb(8, 8, 8);
-  }
-.banner-text p{
-    padding: 0 8%;
-    font-family: sans-serif;
-    margin-top: 10px;
+*{
+    margin:0;
+    padding:0;
+    font-family: 'roboto', sans-serif;
+}
+.container{
+        width:  100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(back.jpeg);
+        background-position:absolute;
+        background-size:cover;
+       
+}
+.row{
+    display: flex;
+    height: 108%;
+    align-items: center;
+}
+.col{
+    flex-basis: 100%;
+}
+h1{
+    color: rgb(233, 229, 229);
+    font-size:100px;
+    margin-left: 20px;
     
 }
-h2{
-    display:inline-block;
-    padding: 20px 50px;
-    border: 3px solid rgb(255, 252, 252);
-    padding: 55px;
-    font-size: 20px;
-    text-decoration: none;
-    color:rgb(255, 250, 250);
-    font-family: sans-serif;
-    margin-top: 20px;
+p{
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
 }
-.p{
-    display:none;
-    padding: 10px 50px;
-    border: 2px solid rgb(231, 207, 207);
-    font-size: 18px;
-    text-decoration: none;
-    color:rgb(216, 216, 216);
-    margin-top:5px;
-}
- a{
-    display:inline-block;
-    padding: 10px 50px;
-    border: 10px solid rgb(255, 255, 255);
-    font-size: 20px;
-    text-decoration: none;
+button{
+    width: 180px;
     color:rgb(255, 255, 255);
-    margin-top:5px;
-  }
-.cursor{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #b9b0b0;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: .1s;
-  }
-  
-.cursor2{
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    background-color: #c6c6c6;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: .15s;
-  }
-  
-.content:hover ~ 
-.cursor{
-    transform: translate(-50%, -50%) scale(1.5);
-    background-color: #8b8989;
-    opacity: .5;
-  }
-  
-  .content:hover ~ .cursor2{
-    opacity: 10;
-  }
-
-  
-  
+    font-size: 12px;
+    padding:12px 0;
+    background: rgb(228, 180, 180);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 210px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:10px 25px;
+    box-sizing: pointer;
+    cursor: pointer;
+    margin: 10px 10px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    filter:blur(0.5px)
+    
+}
+.card1{
+    background-image: url(1.png);
+}
+.card2{
+    background-image: url(2.png);
+}
+.card3{
+    background-image: url(4.png);
+}
+.card4{
+    background-image: url(im3.jpg);
+}
+.card5{
+    background-image: url(5.png);
+}
