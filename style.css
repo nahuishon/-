@@ -13,39 +13,50 @@
 }
 .row{
     display: flex;
-    height: 108%;
+    height: 100%;
     align-items: center;
 }
 .col{
     flex-basis: 100%;
 }
 h1{
-    color: rgb(233, 229, 229);
+    color: rgb(250, 239, 239);
     font-size:100px;
-    margin-left: 20px;
+    margin-left: 100px;
+    margin-top: 10px;
     
 }
 p{
-    color: rgb(255, 255, 255);
+    color: rgb(233, 233, 233);
     font-size: 12px;
     line-height: 20px;
-    margin-left: 40px;
+    margin-left: 100px;
     margin-top: 10px;
+    width: 400px;
 }
-button{
-    width: 180px;
-    color:rgb(255, 255, 255);
-    font-size: 12px;
-    padding:12px 0;
-    background: rgb(228, 180, 180);
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    margin-top: 30px;
+h2{
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 110px;
+    margin-top: 0px;
+    width: 410px;
 }
+a{
+    display:inline-block;
+    padding: 10px 50px;
+    border: 10px solid rgb(243, 214, 214);
+    font-size: 20px;
+    text-decoration: none;
+    color:rgb(250, 233, 233);
+    margin-top:45px;
+    margin-bottom: 0px;
+    margin-left:300px;
+  }
+
 .card{
     width: 200px;
-    height: 210px;
+    height: 250px;
     display: inline-block;
     border-radius: 10px;
     padding:10px 25px;
@@ -55,7 +66,7 @@ button{
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
-    filter:blur(0.5px)
+    filter:blur(0px)
     
 }
 .card1{
@@ -72,4 +83,7 @@ button{
 }
 .card5{
     background-image: url(5.png);
+}
+.card:hover{
+    transform: translateY(-10PX);
 }
