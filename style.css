@@ -16,71 +16,73 @@ body,html{
 
 
  h1{
-   font-size:40px;
+   font-size:80px;
    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
    text-transform: uppercase;
    margin:0;
+   color: #1b1a1a
  }
    
 .banner-img{
-      background-image: url(bal.jpg);
+      background-image: url(3.png);
       -webkit-background-size:cover;
       background-size: cover;
       background-repeat: repeat;
       background-position: center center;
       margin-top: 0px;
       height: 100%;
-      filter:blur(px)
+      filter:blur(4px)
   }
 .banner-text{
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    margin-top: 10px;
+    margin-top: 30px;
     z-index: 5;
-    width: 45%;
+    width: 50%;
     padding: 45px;
     text-align: center;
-    border-top-left-radius: 0%;
-    border-bottom-right-radius:0%;
-    background-color: rgb(238, 104, 80);
-    color:rgb(255, 255, 255);
+    border-top-left-radius: 10%;
+    border-bottom-right-radius:10%;
+    color:rgb(255, 254, 254);
     font-weight: bold;
-    border:3px inset rgb(255, 247, 247);
+    border:5px inset rgb(8, 8, 8);
   }
 .banner-text p{
-    padding: 0.8%;
+    padding: 0 8%;
     font-family: sans-serif;
     margin-top: 10px;
+    
 }
-p1{
+h2{
     display:inline-block;
-    padding: 10px 50px;
-    border: 2px solid rgb(24, 23, 23);
-    font-size: 12px;
+    padding: 20px 50px;
+    border: 3px solid rgb(255, 252, 252);
+    padding: 55px;
+    font-size: 20px;
     text-decoration: none;
-    color:rgb(3, 3, 3);
+    color:rgb(255, 250, 250);
     font-family: sans-serif;
-    margin-top: 25px;
+    margin-top: 20px;
 }
-p2{
+.p{
     display:none;
     padding: 10px 50px;
-    border: 2px solid rgb(240, 240, 240);
+    border: 2px solid rgb(231, 207, 207);
     font-size: 18px;
     text-decoration: none;
-    color:rgb(255, 236, 236);
-    margin-top:15px;
+    color:rgb(216, 216, 216);
+    margin-top:5px;
 }
-a{
+ a{
     display:inline-block;
     padding: 10px 50px;
-    border: 0px solid rgb(240, 240, 240);
-    font-size: 28px;
+    border: 10px solid rgb(255, 255, 255);
+    font-size: 20px;
     text-decoration: none;
     color:rgb(255, 255, 255);
-    margin-top:45px;
+    margin-top:5px;
   }
 .cursor{
     position: fixed;
